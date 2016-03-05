@@ -1,0 +1,30 @@
+<div class="author">
+  <div class="author--media">
+    <nav class="fabs">
+      <a class="fab large ripple twitter" href="https://twitter.com/pz0923">
+        <i class="mdi mdi-twitter"></i>
+      </a>
+      <a class="fab large ripple github" href="https://github.com/zheair923/">
+        <i class="mdi mdi-github-circle"></i>
+      </a>
+      <a class="fab large ripple google-plus" href="http://weibo.com/208111202">
+        <i class="fa fa-weibo fa-1"></i>
+      </a>
+    </nav>
+    {{#if website}}
+      <a href="{{website}}" alt="author_website">
+    {{/if}}
+    {{#if image}}
+      <img class="image" src="{{image}}" />
+    {{else}}
+      <img class="image" src="{{@blog.url}}/shared/img/user-image.png" />
+    {{/if}}
+    {{#if website}}
+      </a>
+    {{/if}}
+  </div>
+  <div class="author--info">
+    <h5 class="name">{{name}}</h5>
+    <p class="bio">{{bio}}</p>
+  </div>
+</div>
